@@ -21,7 +21,7 @@ export default class CardBack extends Component {
         <span />
         { /* your rating element should go here -- you can invoke methods within JSX, à la: this.myMethod() */ }
         {
-          this.props.IMDBRating ? <img/> : <h4>No Rating Found</h4>
+          this.props.IMDBRating ? <img src={imgMapper[this.props.IMDBRating]}/> : <h4>No Rating Found</h4>
         }
         <span />  
         <h5 className="genres">{this.props.genres.join(', ')}</h5>
